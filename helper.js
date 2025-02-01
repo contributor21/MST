@@ -7,7 +7,7 @@ function createAudioHTML(path) {
   
   function generateExampleRow(table_row, base_path, paddedNumber, folders, col_offset) {
     for (var i = 0; i < folders.length; i++) {
-        if (folders[i] == 'text') {
+        if (folders[i] == 'Prompt') {
             let p = base_path + folders[i] + '/' + paddedNumber + '.txt';
             let cell = table_row.cells[col_offset + i];
             var req = new XMLHttpRequest();
