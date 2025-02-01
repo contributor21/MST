@@ -25,9 +25,9 @@ function createAudioHTML(path) {
   
   function generateT2A(tableId) {
     let table = document.getElementById(tableId);
-    let folders = ['text', 'target', 'EchoAudio', 'teacher', 'Make-an-audio2', 'AudioLDM2', 'Tango', 'AudioLDM', 'Make-an-audio', 'AudioGen'];
+    let folders = ['Prompt', 'Digital Input', 'Music Target', 'Output'];
   
-    for (var i = 0; i < 20; i++) {
+    for (var i = 0; i < 2; i++) {
       let paddedNumber = i.toString().padStart(5, '0');  
       generateExampleRow(table.rows[1 + i], 'assets/', paddedNumber, folders, 0);
     }
