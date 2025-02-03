@@ -27,7 +27,7 @@ function createAudioHTML(path) {
     let table = document.getElementById(tableId);
     let folders = ['devices', 'input', 'target', 'output'];
   
-    for (var i = 0; i < 7; i++) {
+    for (var i = 0; i < 6; i++) {
       let paddedNumber = i.toString().padStart(5, '0');  
       generateExampleRow(table.rows[1 + i], 'assets/', paddedNumber, folders, 0);
     }
