@@ -24,7 +24,7 @@
   <body>
     <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
       <div class="text-center">
-        <h1>DeMT</h1><h3>Music Device-Style Transfer</h3>
+        <h1>DeMT</h1><h3>Device-Guided Music Transfer</h3>
         <p class="lead fw-bold">
           <a
             href=""
@@ -43,8 +43,7 @@
       </div>
       <p>
         <b>Abstract.</b>  
-        Device-aware music synthesis can mimic playback quality across a variety of devices or emulate device-specific characteristics for users lacking access to specific hardware. Existing works largely overlook the incorporation of conditional device characteristics as input. While the integration of vision-language models (VLMs) and graphical frequency response curves (FRCs) holds significant potential, it also remains unexplored. In this work, we propose a novel approach that combines textual prompts and FRCs as line graphs, processed by a pre-trained large language model to extract semantic embeddings. These embeddings condition a pre-trained hybrid transformer demucs with feature-wise linear modulation layers, enabling efficient and interpretable device-specific transformations. Fine-tuned on a dataset of off-the-shelf playback devices, our system supports zero-shot adaptation to unseen devices and enables practical applications such as device-style augmentation, spectral fidelity adjustment, and personalized music-to-music transformation.
-      </p>
+        Device-aware music synthesis can mimic playback quality across a variety of devices or emulate device-specific characteristics for users lacking access to specific hardware. Existing works largely overlook the incorporation of conditional device characteristics when mainly employing limited standard numerical representations. Additionally, we observe that the integration of recent large vision language models (VLMs) and frequency response curves (FRCs) holds significant potential in providing meaningful device features yet also remains unexplored. Therefore, we propose DeMT, a novel approach that combines textual prompts and FRCs as line graphs, processed by a well-pre-trained VLM to extract relevant semantic embeddings. These embeddings condition a hybrid transformer demuc model with feature-wise linear modulation layers, enabling efficient and interpretable device-specific transformations. Fine-tuned on a self-collected music dataset of off-the-shelf playback devices, our system supports few-shot and zero-shot adaptation to unseen devices and enables practical applications such as device-style augmentation, spectral fidelity adjustment, and personalized music-to-music transformation.      </p>
     </div>
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
@@ -75,17 +74,17 @@
 
 
     <div class="container shadow p-5 mb-5 bg-white rounded">
-      <h3>Device-Aware Music Generation<a id="efficiency"/></h3>
+      <h3>Examples<a id="efficiency"/></h3>
       <div class="container pt-3 table-responsive">
         <table
           class="table table-hover"
           id="supervision-efficiency-table">
           <thead>
             <tr>
-              <th style="text-align: center" > &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+              <th style="text-align: center" > Device </th>
               <th style="text-align: center">Digital Input</th>
               <th style="text-align: center">Music Target</th>
-              <th style="text-align: center">Output</th>
+              <th style="text-align: center">DeMT</th>
             </tr>
           </thead>
           <tbody>
