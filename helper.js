@@ -7,7 +7,7 @@ function createAudioHTML(path) {
   
   function generateExampleRow(table_row, base_path, paddedNumber, folders, col_offset) {
     for (var i = 0; i < folders.length; i++) {
-        if (folders[i] == 'Prompt') {
+        if (folders[i] == 'devices') {
             let p = base_path + folders[i] + '/' + paddedNumber + '.txt';
             let cell = table_row.cells[col_offset + i];
             var req = new XMLHttpRequest();
@@ -25,7 +25,7 @@ function createAudioHTML(path) {
   
   function generateT2A(tableId) {
     let table = document.getElementById(tableId);
-    let folders = ['Prompt', 'Digital Input', 'Music Target', 'Output'];
+    let folders = ['devices', 'input', 'target', 'output'];
   
     for (var i = 0; i < 2; i++) {
       let paddedNumber = i.toString().padStart(5, '0');  
