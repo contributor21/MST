@@ -44,8 +44,7 @@ function createAudioHTML(path) {
     let id = '#ex-' + i;
     $(id).click(function() {
       generateT2A(
-          'ex',
-          paintingsFilenames, i);
+          'supervision-efficiency-table', i);
       $(id).parent().siblings().removeClass('active');
       $(id).parent().addClass('active');
       return false;
