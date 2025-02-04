@@ -37,7 +37,7 @@ function createAudioHTML(path) {
   for (let i = 1; i <= 3; i++) {
     let id = '#ex-' + i;
     $(id).click(function() {
-      generateT2A('supervision-efficiency-table', e);
+      generateT2A('supervision-efficiency-table', i);
       $(id).parent().siblings().removeClass('active');
       $(id).parent().addClass('active');
       return false;
