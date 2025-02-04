@@ -35,8 +35,19 @@ function createAudioHTML(path) {
   }
 
 
-  
-  generateT2A('ex-1', 1);
-  generateT2A('ex-2', 2);
-  generateT2A('ex-3', 3);
+  // generateT2A('ex-1', 1);
+  // generateT2A('ex-2', 2);
+  // generateT2A('ex-3', 3);
 
+
+  for (let i = 1; i <= 3; i++) {
+    let id = '#ex-' + i;
+    $(id).click(function() {
+      generateT2A(
+          'ex',
+          paintingsFilenames, i);
+      $(id).parent().siblings().removeClass('active');
+      $(id).parent().addClass('active');
+      return false;
+    });
+  }
