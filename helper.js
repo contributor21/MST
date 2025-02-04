@@ -29,14 +29,9 @@ function createAudioHTML(path) {
   
     for (var i = 0; i < 6; i++) {
       let paddedNumber = i.toString().padStart(5, '0');  
-      generateExampleRow(table.rows[1 + i], 'assets/', e, paddedNumber, folders, 0);
+      generateExampleRow(table.rows[1 + i], 'assets/'+e, paddedNumber, folders, 0);
     }
   }
-
-
-  // generateT2A('ex-1', 1);
-  // generateT2A('ex-2', 2);
-  // generateT2A('ex-3', 3);
 
 
   for (let i = 1; i <= 3; i++) {
