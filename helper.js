@@ -25,12 +25,11 @@ function createAudioHTML(path) {
   
   function generateT2A(tableId, e) {
     let table = document.getElementById(tableId);
-    let example_idx = `${e}`; 
     let folders = ['devices', 'input', 'target', 'output'];
   
     for (var i = 0; i < 6; i++) {
       let paddedNumber = i.toString().padStart(5, '0');  
-      generateExampleRow(table.rows[1 + i], 'assets/', example_idx, paddedNumber, folders, 0);
+      generateExampleRow(table.rows[1 + i], 'assets/', e, paddedNumber, folders, 0);
     }
   }
 
