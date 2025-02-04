@@ -37,6 +37,6 @@ function createAudioHTML(path) {
 
   
   generateT2A('ex-1', 1);
-  generateT2A('ex-1', 2);
-  generateT2A('ex-1', 3);
+  generateT2A('ex-2', 2);
+  generateT2A('ex-3', 3);
 
