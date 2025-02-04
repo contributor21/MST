@@ -29,7 +29,7 @@ function createAudioHTML(path) {
   
     for (var i = 0; i < 6; i++) {
       let paddedNumber = i.toString().padStart(5, '0');  
-      generateExampleRow(table.rows[1 + i], 'assets/'+e, paddedNumber, folders, 0);
+      generateExampleRow(table.rows[1 + i], 'assets/1', paddedNumber, folders, 0);
     }
   }
 
