@@ -23,13 +23,13 @@ function createAudioHTML(path) {
   }
   
   
-  function generateT2A(tableId) {
+  function generateT2A(tableId, e) {
     let table = document.getElementById(tableId);
     let folders = ['devices', 'input', 'target', 'output'];
   
     for (var i = 0; i < 6; i++) {
       let paddedNumber = i.toString().padStart(5, '0');  
-      generateExampleRow(table.rows[1 + i], 'assets/', paddedNumber, folders, 0);
+      generateExampleRow(table.rows[1 + i], 'assets/'+e+'/', paddedNumber, folders, 0);
     }
   }
 
@@ -37,8 +37,7 @@ function createAudioHTML(path) {
   for (let i = 1; i <= 3; i++) {
     let id = '#ex-' + i;
     $(id).click(function() {
-      generateT2A(
-          'supervision-efficiency-table');
+      generateT2A('supervision-efficiency-table', e);
       $(id).parent().siblings().removeClass('active');
       $(id).parent().addClass('active');
       return false;
