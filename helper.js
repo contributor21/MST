@@ -17,7 +17,7 @@ function createAudioHTML(path) {
         } else {
             let p = base_path + folders[i] + '/' + paddedNumber + '.wav';
             let cell = table_row.cells[col_offset + i];
-            cell.innerHTML = cell.innerHTML + createAudioHTML(p);
+            cell.innerHTML = createAudioHTML(p); 
         }
     }
   }
@@ -33,6 +33,9 @@ function createAudioHTML(path) {
     }
   }
 
+  $(document).ready(function() {
+    generateT2A('supervision-efficiency-table', 1);
+  });
 
   for (let e = 1; e <= 3; e++) {
     let id = '#supervision-efficiency-table-' + e;
