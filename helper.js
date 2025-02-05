@@ -34,10 +34,10 @@ function createAudioHTML(path) {
   }
 
 
-  for (let i = 1; i <= 3; i++) {
-    let id = '#supervision-efficiency-table-' + i;
+  for (let e = 1; e <= 3; e++) {
+    let id = '#supervision-efficiency-table-' + e;
     $(id).click(function() {
-      generateT2A('supervision-efficiency-table', i);
+      generateT2A('supervision-efficiency-table', e);
       $(id).parent().siblings().removeClass('active');
       $(id).parent().addClass('active');
       return false;
