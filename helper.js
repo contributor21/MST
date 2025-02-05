@@ -16,7 +16,7 @@ function createAudioHTML(path) {
             cell.innerHTML = '<font size="-1">' + req.responseText + '</font>';
         } else {
             let p = base_path + folders[i] + '/' + paddedNumber + '.wav';
-            // let cell = table_row.cells[col_offset + i];
+            let cell = table_row.cells[col_offset + i];
             cell.innerHTML = createAudioHTML(p); 
         }
     }
