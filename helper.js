@@ -37,7 +37,7 @@ function createAudioHTML(path) {
     generateT2A('supervision-efficiency-table', 1);
   });
 
-  for (let e = 1; e <= 3; e++) {
+  for (let e = 1; e <= 5; e++) {
     let id = '#supervision-efficiency-table-' + e;
     $(id).click(function() {
       generateT2A('supervision-efficiency-table', e);
