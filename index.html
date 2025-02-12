@@ -43,8 +43,8 @@
       </div>
       <p>
         <b>Abstract.</b>  
-        Device-aware music synthesis can mimic playback quality across a variety of devices or emulate device-specific characteristics for users lacking access to specific hardware. Existing works largely overlook the incorporation of conditional device characteristics when mainly employing limited standard numerical representations. Additionally, we observe that the integration of recent large vision language models (VLMs) and frequency response curves (FRCs) holds significant potential in providing meaningful device features yet also remains unexplored. Therefore, we propose DeMT, a novel approach that combines textual prompts and FRCs as line graphs, processed by a well-pre-trained VLM to extract relevant semantic embeddings. These embeddings condition a hybrid transformer demuc model with feature-wise linear modulation layers, enabling efficient and interpretable device-specific transformations. Fine-tuned on a self-collected music dataset of off-the-shelf playback devices, our system supports few-shot and zero-shot adaptation to unseen devices and enables practical applications such as device-style augmentation, spectral fidelity adjustment, and personalized music-to-music transformation.      </p>
-    </div>
+        Device-guided music transfer can mimic speaker quality across various devices for users lacking access to specific ones. Existing works largely overlook conditional speaker modeling when mainly employing standard numerical representations of microphones. Therefore, we propose DeMT, a novel approach that processes textual prompts and speaker frequency responses as line graphs through a pre-trained vision language model to extract semantic embeddings that condition a hybrid transformer model via feature-wise linear modulation. Fine-tuned on a self-collected music playback dataset, DeMT supports efficient style transfer and robustness to few-shot adaptation for unseen devices, enabling practical applications such as device-style augmentation or enhancement and personalized music-to-music transformation. Examples can be found at https://anonymous.4open.science/w/music-examples/.
+      </div>
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
     <h2 id="model-overview" style="text-align: center;">Overview</h2>
@@ -70,6 +70,8 @@
               <th style="text-align: center">Digital Input&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
               <th style="text-align: center">Music Target&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
               <th style="text-align: center">DeMT&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+              <!-- <th style="text-align: center">DeMT (Few)&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th> -->
+
             </tr>
           </thead>
           <tbody>
